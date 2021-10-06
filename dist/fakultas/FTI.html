@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style2.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/662346788c.js" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../ico/favicon.ico" />
+    <link rel="icon" type="image/png" href="../ico/favicon-16x16.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../ico/favicon-32x32.png" sizes="16x16" />
+
+    <!-- Dropdown Menu Navbar -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+
+    <title>Fakultas Teknologi Informasi</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center pb-3 pt-3 md:pb-5">
+      <div class="flex-1 flex justify-between items-center">
+        <img src="../img/InfoPMB-Universitas-Budi-Luhur.png" class="w-52 pt-2 md:pt-4 md:w-52 md:ml-5" alt="logo" />
+      </div>
+
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block"
+        ><svg class="fill-current text-gray-900 hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav class="md:pt-6 md:mr-5">
+          <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 md:text-sm font-poppins">
+            <li class="nav__item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 hover:text-indigo-400 active-link" href="../index.html">HOME</a>
+            </li>
+            <li>
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                      <span>FAKULTAS</span>
+                      <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                      <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FTI.html">Fakultas Teknologi Informasi (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FIK.html">Fakultas Ilmu Komunikasi (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FEB.html">Fakultas Ekonomi & Bisnis (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FISIP.html">Fakultas Ilmu Sosial & Ilmu Politik (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FT.html">Fakultas Teknik (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/PP.html">Program Pancasarjana (S2)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/PD.html">Program Diploma (D3)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/AS.html">Akademi Sekretari (D3)</a>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- end Navbar -->
+
+    <!-- Content -->
+    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2019/10/Web-Banner-FTI-Info-PMB-UBL-850x150px-01.jpg" alt="">
+    <div class="bg-white h-auto mb-20 md:mb-24">
+      <div class=" bg-white pt-5 px-5 md:px-80">
+        <img src="../img/undraw_programming_2svr.png" alt="FTI" />
+      </div>
+      <div class="mt-5 mb-16 md:mt-5 font-poppins px-12 md:px-16">
+        <p class="text-base md:text-lg text-blue-900 mb-6 text-center md:px-10 md:text-center">Mau Berkarir di Bidang IT atau Ingin Membangun Perusahaan Startup Sendiri? <strong>Kuliah di Fakultas Teknologi Informasi Universitas Budi Luhur</strong></p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Wujudkan impian kamu untuk memasuki industri digital dan teknologi informasi masa kini, dengan Program Studi; <strong>TEKNIK INFORMATIKA (TI), SISTEM INFORMASI (SI), SISTEM KOMPUTER (SK), MANAJEMEN INFORMATIKA (DIPLOMA 3), DAN KOMPUTERISASI AKUNTANSI (DIPLOMA 3).</strong></p>
+        <p class="text-sm md:text-base md:px-20 pb-5">FAKULTAS TEKNOLOGI INFORMASI UNIVERSITAS BUDI LUHUR MEMILIKI JALUR PEMINATAN/KONSENTRASI:</p>
+        
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>CYBER SECURITY (S1 TEKNIK INFORMATIKA)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Saat ini hampir segala lini kehidupan masyarakat bergantung pada teknologi. Keahlian sebagai Cyber Security sangat dibutuhkan oleh perusahaan diberbagai bidang untuk keperluan Cyber Defense terutama pertahanan di dunia maya.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Konfigurasi jaringan komputer berserta eksplorasi berbagai ancaman di dunia maya, serta praktek pembetukan sistem pertahanannnya dan pengelolaan jaringan yang aman.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Network Engineer, Computer Forensic Investigator, System Administrator, Database Administrator, Security Specialist.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>PROGRAMMING EXPERT (S1 TEKNIK INFORMATIKA)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Bebagai perusahaan dan startup masa kini membutuhkan programmer handal untuk menjadi core utama dari proses pelaksanaan bisnisnisnya, sebut saja unicorn seperti Gojek, Tokopedia dan Traveloka yang sukses berkat banyak programmer dibelakangnya.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Berbagai teknik dan bahasa pemrograman yang siap diimplementasikan pada pengembangan sistem, aplikasi dan kecerdasan tiruan yang di butuhkan di era industri 4.0.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Software Developer, Web Developer, IT Consultant, IT Program/Project Manager, Computer Programmers, Mobile Application Developer, Game Developer, UI/UX Designer.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>ARTIFICIAL INTELLIGENT (S1 TEKNIK INFORMATIKA)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Otomatisasi digunakan untuk mempercepat jalannya proses bisnis. Keahlian pengembangan kecerdasan buatan seperti Chat Bot sangat dibutuhkan di era industri 4.0.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Berbagai teknik dan bahasa pemrograman yang siap diimplementasikan pada pengembangan kecerdasan tiruan.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">AI Developer, Software Developer, IT Consultant, IT Program/Project Manager, Computer Programmers, Game Developer.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>SISTEM ENTERPRISE (S1 SISTEM INFORMASI)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Keahlian membangun sistem informasi sangat penting bagi perusahaan dari skala kecil hingga enterprise, mulai dari perencanaan, analisa kondisi saat ini, analisa kebutuhan, analisa sistem yang akan datang, implementasi, testing dan maintenance, semua dipelajari dalam konsentrasi Sistem Enterprise.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Perencanaan Sumber Daya Perusahaan, Manajemen Rantai Persediaan, Customer Relationship Management, Pengadaan Secara Elektronik, Kecerdasan Bisnis.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Software Developer Expert (Web/Mobile/Desktop), System Analyst.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>DIGITAL PRENEURSHIP (S1 SISTEM INFORMASI)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Perkembangan teknologi turut serta memanjukan bisnis dan perniagaan secara online, kuasai teknik seperti merancang bangun sistem informasi perdagangan berbasis elektronik/internet (e-commerce), serta proses marketing dan periklanannya dengan menggunakan multichannel/social media dan jadi enterpreneur dalam konsentrasi Digital Preneurship.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Cyberpreneurship, Rekayasa Web, Optimasi Mesin Pencari, E-Commerce, Media Sosial dan Periklanan Digital.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Technopreneur/Digitalpreneur, Search Engine Optimization (SEO) Specialist, Startup Founder.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>DATA SCIENCE (S1 SISTEM INFORMASI)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Di era teknologi informasi, data menjadi hal yang sangat penting. Dengan memiliki keahlian menganalisis, memvisualisasikan dan mengolah data, dapat membantu perusahaan untuk perbaikan proses dalam pengambilan keputusan.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Big Data Analytic, Data Visualization, Data Modeling, Data Engineering, Teknologi dan Management Big Data (Hadoop).</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Data Scientist, Data Data Analyst.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>EMBEDDED SYSTEM & INTERNET OF THINGS (S1 SISTEM KOMPUTER)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Dalam konsentrasi Embedded System & Internet Of Things mahasiswa akan mempelajari perangkat keras (hardware programming) dan pemrograman perangkat lunak (software programming) yang berhubungan dengan sistem cerdas seperti perangkat android dan Arduino. Dengan mengintegrasikan antara perangkat sistem cerdas, computer dan perangkat sistem komunikasi, semua hal – hal yang terjadi disekitar kita dapat diketahui secara pasti dan dapat dikedandalikan dengan baik.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Basic Programming and Advanced Programming, Database Systems, Data Mining Basic for Intellegent Space, Microprocessor and System On Chip, Digital Systems, Basic Electronics and Advanced Electronics, Embedded Systems, Mobile Programming, Hardware Interface, Data Acquisition Systems, Knowlwdge Based Systems, Sensor Technology, Wireless Sensor Network, Robotic Systems, Sistem Otomasi pada Industri, Integrated Automation Digital System Network [Internet of Things].</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Computer and Embedded System Engineer, Internet of Things (IoT) Engineer, Industrial Control Engineer, Computer Network Architect and Analyst.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>ROBOTICS (S1 SISTEM KOMPUTER)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Dimasa depan robot akan mempermudah segala aktivitas manusia. Pemahaman dan keahlian dalam mengembangkan sistem robotik akan menjadi daya saing tersendiri di era industri 4.0.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Basic Programming and Advanced Programming, Robotic Systems, Microprocessor and System On Chip, Digital Systems, Basic Electronics and Advanced Electronics, Embedded Systems, Mobile Programming, Hardware Interface, Data Acquisition Systems, Knowlwdge Based Systems, Sensor Technology, Wireless Sensor Network, Sistem Otomasi pada Industri, Integrated Automation Digital System Network [Internet of Things].</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Robotics, Smart System & Automation Engineer.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>MOBILE APPLICATION DEVELOPMENT (D3 MANAJEMEN INFORMATIKA)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Segala aspek kebutuhan manusia modern dipermudah dengan penggunaan aplikasi mobile. Kemampuan untuk mengembangkan mobile app menjadi sesuatu yang dicari oleh berbagai perusahaan IT dan Startup masa kini.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Mobile App Development, Android Studio, UI Design, UX Process, App Quality Assurance Engineers dan Testers</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Mobile App Development, Android Studio, UI Design, UX Process, App Quality Assurance Engineers dan Testers.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>INTERACTIVE DIGITAL DESIGN (D3 MANAJEMEN INFORMATIKA)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Dampak dari penggunaan internet secara global adalah peningkatan kebutuhan perusahaan untuk megemas dan menghasilkan konten visual sebagai sarana promosi produk atau jasa ke level yang lebih tinggi. Tidak hanya menarik, konten promosi di era industri 4.0 juga imersif, dengan mengaburkan batasan antara dunia nyata dengan dunia digital atau dunia simulasi, sehingga penggunanya bisa merasakan pengalaman yang nyata.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Graphic Design, Interactive Design, Video Editing, Web Design, UIUX Design, Game Design, Visual Effect, 3D Object Modeling.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Digital Graphic Designer (New Media), Ilustrator, Animator, Video Editor, Web Designer, UI/UX Designer, Video Game Designer, Visual Effect Compositor, Virtual Reality 3D Artist.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>NETWORK ENGINEERING (D3 MANAJEMEN INFORMATIKA)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Di era semua hal serba terhubung, memiliki kemampuan mengaplikasikan rekayasa dan administrasi jaringan menjadi kompetensi yang dicari berbagai perusahaan.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Pengaplikasian sistem komputer, instalasi, konfigurasi, perawatan dan perbaikan infrastruktur jaringan, pemahaman tentang keamanan jaringan pemahaman tentang kominukasi optik, WAN dll</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">Network Administrator, Network designer, IT Support Admin Security, Malware Analyst, Digital Forensic, Database Administrator</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>ACCOUNTING INFORMATION SYSTEM (D3 KOMPUTERISASI AKUNTANSI)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Keilmuan akutansi yang dipadukan dengan pemanfaatan teknologi informasi, menghasilkan kemampuan yang paling dicari perusahaan masa kini, yaitu manager yang bisa mengimplementasikan teknologi dalam merancang strategi bisnis serta menggambil keputusan dalam hal keuangan perusahaan.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Akuntasi dan Bisnis, Pemanfaatan sistem Informasi yang dikombinasikan dengan teori dan implementasi ilmu akuntansi, Manajemen keuangan berbasiskan teknologi informasi.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-5">System Analyst, Business Analyst, Business Consultant, IT Consultant, Bidang Accounting Information System di berbagai instansi baik swasta maupun pemerintah.</p>
+
+        <!--  -->
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>DIGITAL BUSINESS (D3 KOMPUTERISASI AKUNTANSI)</strong></p>
+        <p class="text-sm md:text-base md:px-20">Daripada menjadi karyawan, anak muda masa kini lebih memilih untuk mengembangkan bisnis berbasis digital sendiri. Hal ini bisa dilihat dari banyaknya kisah sukses kaum millenial yang menjadi jutawan diusia muda, dengan hanya berbekal bisnis yang dikelola secara online.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Apa Yang dipelajari:</p>
+        <p class="text-sm md:text-base md:px-20">Konsep, teori, prinsip, perancangan dan implementasi manajemen, serta kewirausahaan berbasis teknologi informasi dan e-bisnis.</p>
+        <p class="text-sm md:text-base md:px-20 italic">Prospek Karir:</p>
+        <p class="text-sm md:text-base md:px-20 pb-10">Digitalpreneur (Pengusaha Digital), Analis Manajemen Bisnis, Konsultan Pemasaran Digital, Manajer Pengembangan Bisnis, Startup Founder.</p>
+
+        <p class="pb-5 md:pb-1">
+          <img class="text-center md:px-96" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/04/00.-UNIVERSITAS-BUDI-LUHUR.jpg" alt="">
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-blue-100 h-auto md:h-auto">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 px-5 md:px-16 font-poppins text-sm">
+          <div class="col-span-12 md:col-span-4 pt-10 pb-10 pr-10 md:pb-10">
+            <!-- Fakultas -->
+            <h6 class="text-blue-900 font-bold pb-2">FAKULTAS</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://fti.budiluhur.ac.id">Fakultas Teknologi Informasi</a><br />
+            <a class="hover:text-blue-700" href="http://d3unggulan.budiluhur.ac.id">Diploma 3 (Manajemen Informatika-FTI)</a><br />
+            <a class="hover:text-blue-700" href="https://fikom.budiluhur.ac.id">Fakultas Ilmu Komunikasi (FIKOM)</a><br />
+            <a class="hover:text-blue-700" href="https://fe.budiluhur.ac.id">Fakultas Ekonomi Dan Bisnis (FEB)</a><br />
+            <a class="hover:text-blue-700" href="https://fisip.budiluhur.ac.id">Fakultas Ilmu Sosial Dan Ilmu Politik (FISIP)</a><br />
+            <a class="hover:text-blue-700" href="https://ft.budiluhur.ac.id">Fakultas Teknik (FT)</a><br />
+            <a class="hover:text-blue-700" href="http://astri.budiluhur.ac.id">Akademi Sekretar Budi Luhur (ASTRI)</a><br />
+            <a class="hover:text-blue-700" href="http://executive.budiluhur.ac.id/">Karyawan Kelas</a><br />
+            <a class="hover:text-blue-700" href="http://pascasarjana.budiluhur.ac.id//">Pancasarjana</a><br />
+            <br />
+            <!-- Web Mahasiswa -->
+            <h6 class="text-blue-900 font-bold pb-2">WEB MAHASISWA</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://tracer.budiluhur.ac.id/sign/">Tracer Study</a><br />
+            <br />
+            <!-- Web Dosen -->
+            <h6 class="text-blue-900 font-bold pb-2">WEB DOSEN</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://webdosen.budiluhur.ac.id/">Web Dosen</a><br />
+            <a class="hover:text-blue-700" href="https://sap.budiluhur.ac.id/">Bahan Ajar</a><br />
+            <br />
+            <!-- Web Karyawan -->
+            <h6 class="text-blue-900 font-bold pb-2">WEB KARYAWAN</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://sim.budiluhur.ac.id/">Sistem Informasi Manajeman Budi Luhur(SIM)</a><br />
+            <br />
+            <!-- Alumni -->
+            <h6 class="text-blue-900 font-bold pb-2">ALUMNI</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://alumnibl.budiluhur.ac.id">Pencarian Alumni</a><br />
+            <a class="hover:text-blue-700" href="http://alumni.budiluhur.ac.id/">Alumni</a><br />
+            <br />
+            <!-- Tracer Study -->
+            <h6 class="text-blue-900 font-bold pb-2">TRACER STUDY</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://tracer.budiluhur.ac.id/sign/">Tracer Study</a><br />
+          </div>
+
+          <div class="col-span-12 -mt-4 md:mt-10 md:col-span-4 pb-10 md:pb-10 pr-10">
+            <!-- Biro Pendukung -->
+            <h6 class="text-blue-900 font-bold pb-2">BIRO PENDUKUNG</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="http://baak.budiluhur.ac.id/">Direktorat Administrasi Akademik (DAA)</a><br />
+            <a class="hover:text-blue-700" href="http://kemahasiswaan.budiluhur.ac.id/">Direktorat Kemahasiswaan, Karir, dan Alumni (DKKA)</a><br />
+            <a class="hover:text-blue-700" href="http://keuangan.budiluhur.ac.id/">Direktorat Keuangan</a><br />
+            <a class="hover:text-blue-700" href="http://sdm.budiluhur.ac.id/">Direktorat Sumber Daya Manusia</a><br />
+            <a class="hover:text-blue-700" href="http://dpm.budiluhur.ac.id/">Direktorat Penjamin MUtu</a><br />
+            <a class="hover:text-blue-700" href="http://riset.budiluhur.ac.id/">Lembaga Riset</a><br />
+            <a class="hover:text-blue-700" href="http://ppm.budiluhur.ac.id/">PPM</a><br />
+            <a class="hover:text-blue-700" href="http://perpustakaan.budiluhur.ac.id/">Perpustakaan</a><br />
+            <a class="hover:text-blue-700" href="http://pustaka.budiluhur.ac.id/">Pustaka</a><br />
+            <a class="hover:text-blue-700" href="http://karir.budiluhur.ac.id/">Career Center</a><br />
+            <a class="hover:text-blue-700" href="http://umum.budiluhur.ac.id/">Direktorat Administrasi Umum</a><br />
+            <a class="hover:text-blue-700" href="http://staff.budiluhur.ac.id/">Staff Universitas Budi Luhur</a><br />
+            <br />
+            <!-- Tautan Penting Lainnya -->
+            <h6 class="text-blue-900 font-bold pb-2">TAUTAN PENTING LAINNYA</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="http://budiluhur.blog/">Blog</a><br />
+            <a class="hover:text-blue-700" href="http://liputan.budiluhur.ac.id/">Liputan</a><br />
+            <a class="hover:text-blue-700" href="http://lldikti3.ristekdikti.go.id/">LLDIKTI3</a><br />
+            <a class="hover:text-blue-700" href="http://forlap.ristekdikti.go.id/">Forlap</a><br />
+            <a class="hover:text-blue-700" href="http://simlitabmas.ristekdikti.go.id//">SIMLITABMAS</a><br />
+            <a class="hover:text-blue-700" href="http://sinta2.ristekdikti.go.id/">SINTA</a><br />
+            <a class="hover:text-blue-700" href="https://globalclimatecon.com/">6th International Conference On Climate Change</a><br />
+            <a class="hover:text-blue-700" href="http://digitalmarketingcenter.id/">Digital Business Center</a><br />
+          </div>
+
+          <div class="col-span-12 -mt-4 md:mt-10 md:col-span-4 pb-10 pr-10 md:pb-10">
+            <!-- Pendaftaran -->
+            <h6 class="text-blue-900 font-bold pb-2">PENDAFTARAN</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://pendaftaran.budiluhur.ac.id/">Pendaftaran Mahasiswa Baru</a><br />
+            <a class="hover:text-blue-700" href="http://infopmb.budiluhur.ac.id/">informasi Pendaftaran</a><br />
+            <br />
+            <!-- Sosial Media -->
+            <h6 class="text-blue-900 font-bold pb-2">SOSIAL MEDIA</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <div class="hidden md:flex">
+              <a class="hover:text-blue-700 fab fa-youtube text-2xl mr-3 hidden" href="https://youtube.com/kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-instagram text-2xl mr-3" href="https://instagram.com/kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-tiktok text-2xl mr-3" href="https://www.tiktok.com/@kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-twitter text-2xl mr-3" href="https://twitter.com/kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-line text-2xl mr-3" href="http://line.me/ti/p/~@kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-spotify text-2xl mr-3" href="https://open.spotify.com/show/667XScdZx09vDW6vEu9r55"></a>
+              <a class="hover:text-blue-700 fab fa-facebook text-2xl mr-3" href="https://www.facebook.com/groups/universitasbudiluhur/"></a>
+              <a class="hover:text-blue-700 fas fa-envelope text-2xl mr-3" href="mailto:info@budiluhur.ac.id"></a>
+              <a class="hover:text-blue-700 fab fa-whatsapp text-2xl mr-3" href="https://api.whatsapp.com/send?phone=+628118714455&text=Saya ingin bertanya seputar Kampus Universitas Budi Luhur…"></a>
+            </div>
+            <div class="md:hidden">
+              <a class="hover:text-blue-700" href="https://youtube.com/kampusbudiluhur">Youtube</a><br />
+              <a class="hover:text-blue-700" href="https://instagram.com/kampusbudiluhur">Instagram</a><br />
+              <a class="hover:text-blue-700" href="https://www.tiktok.com/@kampusbudiluhur">TikTok</a><br />
+              <a class="hover:text-blue-700" href="https://twitter.com/kampusbudiluhur">Twitter</a><br />
+              <a class="hover:text-blue-700" href="http://line.me/ti/p/~@kampusbudiluhur">Line</a><br />
+              <a class="hover:text-blue-700" href="https://open.spotify.com/show/667XScdZx09vDW6vEu9r55">Spotify</a><br />
+              <a class="hover:text-blue-700" href="https://www.facebook.com/groups/universitasbudiluhur/">Facebook</a><br />
+              <a class="hover:text-blue-700" href="mailto:info@budiluhur.ac.id">Email</a><br />
+              <a class="hover:text-blue-700" href="https://api.whatsapp.com/send?phone=+628118714455&text=Saya ingin bertanya seputar Kampus Universitas Budi Luhur…">Whatsapp</a><br />
+            </div>
+
+            <br />
+            <!-- Lokasi -->
+            <h6 class="text-blue-900 font-bold pb-2">LOKASI</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <div class="textwidget">
+              <p>
+                <strong>Kampus Pusat:</strong><br />
+                Jl. Ciledug Raya, Petukangan Utara,<br />
+                Jakarta Selatan, 12260.<br />
+                DKI Jakarta, Indonesia.<br />
+                Telp: 021-585 3753 Fax: 021-585 3752.<br />
+                Email: <a class="hover:text-blue-700" href="mailto:info@budiluhur.ac.id">info@budiluhur.ac.id</a>
+              </p>
+              <br />
+              <p>
+                <strong>Kampus Roxy:</strong><br />
+                Pusat Niaga Roxy Mas Blok E2 No.38-39<br />
+                Jl.K.H. Hasyim Ashari Jakarta Pusat<br />
+                Telp: 021-6328709-10 Fax: 021-6322872<br />
+                Website: <a class="hover:text-blue-700" href="http://roxy.budiluhur.ac.id/">roxy.budiluhur.ac.id</a>
+              </p>
+              <br />
+              <p>
+                <strong>Kampus Salemba:</strong><br />
+                Sentra Salemba Mas Blok S-T<br />
+                Jl. Salemba Raya No. 34-36<br />
+                Telp: 021-3928688-89 Fax: 021-3161636<br />
+                Website: <a class="hover:text-blue-700" href="http://salemba.budiluhur.ac.id/">salemba.budiluhur.ac.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endContent -->
+
+    <!-- Footer -->
+    <div class="bg-blue-900 h-auto md:h-20">
+      <div class="container mx-auto">
+        <p class="text-white text-center pt-7 pb-7 font-poppins px-10">
+          Copyright @ 2020. <a class="text-blue-400 md:hover:text-white" href="http://infopmb.budiluhur.ac.id/">Universitas Budi Luhur</a>. All Right Reserved
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <!-- Scroll Back to Top -->
+    <script src="../js/up_btn.js"></script>
+    <script>
+      up({});
+    </script>
+    <!-- Scroll Back to Top -->
+
+  </body>
+</html>

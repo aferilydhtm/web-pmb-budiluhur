@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/662346788c.js" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="ico/favicon.ico" />
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
+
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+
+    <title>Info Penerimaan Mahasiswa Baru Universitas Budi Luhur – Generasi Cerdas Berbudi Luhur</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center pb-3 pt-3 md:pb-5">
+      <div class="flex-1 flex justify-between items-center">
+        <img src="img/InfoPMB-Universitas-Budi-Luhur.png" class="w-52 pt-2 md:pt-4 md:w-52 md:ml-5" alt="logo" />
+      </div>
+
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block"
+        ><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav class="md:pt-6 md:mr-5">
+          <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0 md:text-sm font-poppins">
+            <li class="nav__item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 hover:text-indigo-400 active-link" href="#biaya">BIAYA</a>
+            </li>
+            <li class="nav-item">
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 hover:text-indigo-400" href="#informasi">INFORMASI PROGRAM STUDI</a>
+            </li>
+            <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 hover:text-indigo-400" href="#persyaratan">PERSYARATAN</a>
+            </li>
+            <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 hover:text-indigo-400" href="http://bit.ly/joinUBL">PENDAFTARAN</a>
+            </li>
+            <li>
+              <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 hover:text-indigo-400" href="http://pendaftaran.budiluhur.ac.id/beasiswanusantara">PENDAFTARAN BEASISWA NUSANTARA</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- body -->
+    <!-- 1 -->
+    <section class="home section" id="home">
+      <div class="bg-gradient-to-tr from-blue-400 via-blue-600 to-blue-800 h-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="ml-10 mr-10 md:ml-20 md:mr-10 md:p-1 mt-14 mb-14 md:mt-15 md:mb-15 text-center md:text-left">
+            <h1 class="text-white text-5xl font-extrabold md:font-extrabold" style="text-transform: uppercase">Raih Passionmu di Kampus Cerdas Berbudi Luhur</h1>
+            <p class="font-poppins text-white mt-5">Pendaftaran Gelombang I:<strong> Desember 2020 – Februari 2021</strong></p>
+            <p class="font-poppins text-white -mt-1 md:-mt-1">Pendaftaran Gelombang II:<strong> Maret 2021 – Mei 2021</strong></p>
+            <p class="font-poppins text-white -mt-1 md:-mt-1 mb-10">Pendaftaran Gelombang III:<strong> Juni 2021 – Agustus 2021</strong></p>
+            <a
+              href="https://www.budiluhur.ac.id/#kampusmerdeka"
+              class="font-poppins bg-white hover:bg-blue-900 duration-200 text-blue-900 hover:text-white rounded-full py-3 px-10 md:py-3 md:px-12 w-auto text-xl md:text-lg"
+              >Selengkapnya <span class="fas fa-angle-double-right"></span></a
+            ><br /><br /><br />
+            <a
+              href="http://bit.ly/joinUBL"
+              class="font-poppins bg-blue-900 hover:bg-white duration-200 text-white hover:text-blue-900 rounded-full py-3 px-12 md:py-3 md:px-11 w-auto text-xl md:text-lg"
+              >Daftar Sekarang</a
+            >
+          </div>
+
+          <div class="w-full pt-1 px-5 md:h-full">
+            <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/12/gel1-01.png" alt="BudiLuhur" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 1 -->
+
+    <!-- 2 -->
+    <section>
+      <div class="bg-white h-auto text-center mb-20 md:mb-24">
+        <div class="mt-14 mb-16 md:mt-20">
+          <h1 class="text-4xl text-extrabold text-blue-900 mb-6 px-20"><strong>KULIAH KEREN & FUN DI UNIVERSITAS BUDI LUHUR</strong></h1>
+          <p class="font-poppins px-10 md:px-24 text-gray-600">
+            Universitas Budi Luhur 40 tahun terbukti sebagai kampus pionir dalam bidang komputer di Indonesia dengan mendidik dan menghasilkan generasi Cerdas Berbudi Luhur sejak 1979.
+          </p>
+        </div>
+        <a href="http://bit.ly/joinUBL" class="font-poppins bg-blue-900 hover:bg-blue-400 duration-200 text-white rounded-full py-3 px-12 md:py-3 md:px-11 w-auto text-xl">Daftar Sekarang</a>
+      </div>
+    </section>
+    <!-- 2 -->
+
+    <!-- 3 -->
+    <section>
+      <div class="bg-blue-400 h-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="ml-10 mr-10 md:ml-20 md:mr-10 md:p-1 mt-14 mb-14 md:mt-15 md:mb-15 text-center md:text-left">
+            <h1 class="text-white text-5xl font-extrabold md:font-extrabold" style="text-transform: uppercase">KULIAH KEREN & FUN "KAMPUS MERDEKA" UNIVERSITAS BUDI LUHUR</h1>
+            <p class="font-poppins text-white mt-5">Di Era Revolusi Industri 4.0 Jangan Sampai Kamu salah Jurusan, apalagi salah pilih kampus!</p>
+            <br /><br />
+            <a href="#informasi" class="font-poppins bg-white hover:bg-blue-900 duration-200 text-blue-900 hover:text-white rounded-full py-3 px-11 md:py-3 md:px-12 w-auto text-xl md:text-lg"
+              >Jangan Salah Pilih</a
+            ><br /><br /><br />
+            <a
+              href="http://bit.ly/joinUBL"
+              class="font-poppins bg-blue-900 hover:bg-white duration-200 text-white hover:text-blue-900 rounded-full py-3 px-12 md:py-3 md:px-11 w-auto text-xl md:text-lg"
+              >Daftar Sekarang <span class="fas fa-angle-double-right"></span
+            ></a>
+          </div>
+
+          <div class="w-full pt-1 px-2 md:h-full">
+            <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/05/Image-Banner-Website2-01.png" alt="gambar" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3 -->
+
+    <!-- 4 -->
+    <section class="persyaratan section" id="persyaratan">
+      <div class="bg-white h-auto">
+        <div class="container mx-auto pt-14 pb-14">
+          <h1 class="text-center text-4xl text-extrabold text-blue-900 pb-10 px-20"><strong>SYARAT DAN KETENTUAN PENDAFTARAN</strong></h1>
+          <div class="grid grid-cols-12 px-3 md:pr-10 md:pl-10 font-poppins text-sm">
+            <!-- syarat pendaftaran dan ketentuan -->
+            <div class="col-span-12 md:col-span-6 px-14 mb-7">
+              <h6 class="text-blue-900 font-bold pb-1 text-center md:text-left">Syarat Pendaftaran</h6>
+              <hr class="pb-1 text-blue-900" />
+              <ol class="list-decimal">
+                <li>Pendaftaran Online di <a class="hover:text-blue-500" href="http://bit.ly/joinUBL">pendaftaran.budiluhur.ac.id</a></li>
+                <li>Biaya Pendaftaran Rp. 250.000,-</li>
+                <li>Scan Kartu Identitas (KTP / Kartu Pelajar / SIM / KK)</li>
+                <li>Scan Raport SMA/SMK/sederajat, semester 4 / 5/ 6 (pilih satu yang terbaik)</li>
+              </ol>
+              <br />
+              <h6 class="text-blue-900 font-bold pb-1 text-center md:text-left">Ketentuan Umum</h6>
+              <hr class="pb-1 text-blue-900" />
+              <ol class="list-decimal">
+                <li>Cashback Rp. 1.000.000 (S1) atau Rp. 500.000 (D3) apabila melakukan sistem pembayaran langsung lunas.</li>
+                <li>Cashback Rp. 500.000 bagi calon mahasiswa yang merupakan anak atau saudara kandung dari mahasiswa atau alumni kampus Budi Luhur.</li>
+                <li>Bagi calon mahasiswa yang tidak melakukan pembayaran biaya kuliah pada waktu yang telah ditentukan, dianggap mengundurkan diri.</li>
+                <li>
+                  Proses pengunduran diri akan mendapat pengembalian dana (kecuali biaya pendaftaran) dengan ketentuan sebagai berikut :
+                  <ol class="list-disc pl-5">
+                    <li>100% apabila tidak lulus ujian SMA/SMK atau jika diterima di UI, IPB, ITS, ITB, UGM, UNAIR melalui jalur SBMPTN.</li>
+                    <li>75% apabila diterima di Perguruan Tinggi Negeri selain Perguruan Tinggi Negeri di atas.</li>
+                    <li>50% apabila mengundurkan diri dengan alasan selain dua point diatas.</li>
+                    <li>Pengunduran diri hanya dapat dilakukan sampai tanggal 25 Agustus 2021.</li>
+                    <li>Apabila pindah Fakultas dikenakan biaya pendaftaran kembali sebesar Rp.250.000,-</li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+            <!-- syarat pendaftaran dan ketentuan -->
+
+            <!-- Program-program -->
+            <div class="col-span-12 md:col-span-6 px-14 text-center md:text-left">
+              <div class="mb-3">
+                <button class="bg-blue-900 px-10 py-2 rounded transform hover:scale-110 motion-reduce:transform-none md:px-10 md:bg-white md:text-blue-900" id="menu-btn">
+                  <h6 class="text-white md:text-blue-900 font-bold">Program Reguler</h6>
+                </button>
+                <div class="flex flex-col bg-gray-200 hidden rounded mt-1 text-smp px-4 pt-2 pb-3" id="dropdown">
+                  <h6 class="text-blue-900 font-bold pb-1 text-center md:text-left">Program Reguler</h6>
+                  <hr class="pb-1 text-blue-900" />
+                  <ol class="list-decimal text-left pl-4">
+                    <li>Memiliki nilai rata-rata Ujian Akhir Nasional >= 7.00 atau Nilai Rapot Semester 4/5/6 (pilih salah satu)</li>
+                    <li>Fotokopi Ijazah Legalisir</li>
+                    <li>Fotokopi SHUN Legalisir</li>
+                    <li>Fotokopi KTP/Kartu Pelajar</li>
+                    <li>Fotokopi Kartu Keluarga</li>
+                    <li>Lulus seleksi administrasi dari Universitas Budi Luhur</li>
+                  </ol>
+                  <p class="pt-2"><strong>Note :</strong> <a class="text-blue-500 hover:text-blue-900" href="#home">pendaftaran gelombang</a></p>
+                </div>
+              </div>
+              <hr />
+
+              <div class="mb-3 mt-3">
+                <button class="bg-blue-900 px-7 py-2 rounded transform hover:scale-110 motion-reduce:transform-none md:px-10 md:bg-white md:text-blue-900" id="menu-btn2">
+                  <h6 class="text-white md:text-blue-900 font-bold">Beasiswa Nusantara</h6>
+                </button>
+                <div class="flex flex-col bg-gray-200 hidden rounded mt-1 text-sm px-4 pt-2 pb-3" id="dropdown2">
+                  <h6 class="text-blue-900 font-bold pb-1 text-center md:text-left">Beasiswa Nusantara</h6>
+                  <hr class="pb-1 text-blue-900" />
+                  <ol class="list-decimal text-left pl-4">
+                    <li>Berasal dari Daerah Seluruh Indonesia</li>
+                    <li>Nilai Rapot Semester 4, 5, 6 rata-rata nilai minimal 7,5</li>
+                    <li>Memiliki nilai rata-rata Ujian Akhir Nasional >= 7.00</li>
+                    <li>Fotokopi Ijazah Legalisir</li>
+                    <li>Fotokopi SHUN Legalisir</li>
+                    <li>Fotokopi KTP/Kartu Pelajar</li>
+                    <li>Fotokopi Kartu Keluarga</li>
+                    <li>Lulus Tes seleksi beasiswa dari Universitas Budi Luhur</li>
+                  </ol>
+                  <p class="pt-2"><strong>Note :</strong> Daerah penerima akan di tentukan oleh Yayasan Pendidikan Budi Luhur Cakti</p>
+                </div>
+              </div>
+              <hr />
+
+              <div class="mb-3 mt-3">
+                <button class="bg-blue-900 px-12 py-2 rounded transform hover:scale-110 motion-reduce:transform-none md:px-10 md:bg-white md:text-blue-900" id="menu-btn3">
+                  <h6 class="text-white md:text-blue-900 font-bold">Beasiswa Atlet</h6>
+                </button>
+                <div class="flex flex-col bg-gray-200 hidden rounded mt-1 text-sm px-4 pt-2 pb-3" id="dropdown3">
+                  <h6 class="text-blue-900 font-bold pb-1 text-center md:text-left">Beasiswa Atlet</h6>
+                  <hr class="pb-1 text-blue-900" />
+                  <ol class="list-decimal text-left pl-4">
+                    <li>Mendaftarkan diri melalui web pendaftaran</li>
+                    <li>Pria atau Wanita</li>
+                    <li>Lulus SMA sederajat</li>
+                    <li>Usia Maksimal 19 Tahun pada saat Mendaftar</li>
+                    <li>
+                      Merupakan Atlet Berprestasi Tingkat Provinsi atau Nasional yang dibuktikan dengan Dokumen pendukung seperti Sertifikat Prestasi, Piagam atau Surat keterangan Atlet dari Institusi
+                      Berwenang di Tingkat Daerah atau Nasional
+                    </li>
+                    <li>Mengikuti test tertulis sesuai dengan Fakultas yang di Pilih</li>
+                    <li>Mengikuti test Praktik yang diselenggarakan oleh UKM di Universitas Budi Luhur sesuai dengan bidang Olah raga yang dipilih</li>
+                    <li>Melampirkan Fotocopy Ijazah yang telah dilegalisir</li>
+                    <li>Melampirkan Fotocopy Hasil Nilai Ujian Akhir Nasional</li>
+                    <li>Melampirkan Fotocopy Raport SMA</li>
+                    <li>Melampirkan Surat Keterangan Berbadan Sehat dari Dokter</li>
+                    <li>Melampirkan Surat Keterangan tidak sedang menerima beasiswa dari tempat lain dari Sekolah Asal yang ditandatangani diatas materai Rp. 6000</li>
+                    <li>Melampirkan Surat rekomendasi dari orang tua yang ditandatangani diatas materai Rp. 6000</li>
+                    <li>Melampirkan Fotocopy KTP/Kartu Keluarga</li>
+                    <li>Menyertakan pas Photo berwarna 2 (dua) lembar ukuran 4×6 cm</li>
+                  </ol>
+                  <p class="pt-2"><strong>Note :</strong> UKM akan melakukan seleksi praktek untuk menentukan kelulusan</p>
+                </div>
+              </div>
+              <hr />
+
+              <div class="mb-3 mt-3">
+                <button class="bg-blue-900 px-8 py-2 rounded transform hover:scale-110 motion-reduce:transform-none md:px-10 md:bg-white md:text-blue-900" id="menu-btn4">
+                  <h6 class="text-white md:text-blue-900 font-bold">Beasiswa KIP Kuliah</h6>
+                </button>
+                <div class="flex flex-col bg-gray-200 hidden rounded mt-1 text-sm px-4 pt-2 pb-3" id="dropdown4">
+                  <h6 class="text-blue-900 font-bold pb-1 text-center md:text-left">Beasiswa KIP Kuliah</h6>
+                  <hr class="pb-1 text-blue-900" />
+                  <ol class="list-decimal text-left pl-4">
+                    <li>Calon Mahasiswa sudah mendaftar pada web KIP-Kuliah Kemendikbud</li>
+                    <li>Fotokopi KTP</li>
+                    <li>Fotokopi KTP Orang Tua</li>
+                    <li>Fotokopi Akta Lahir</li>
+                    <li>Fotokopi Kartu Keluarga</li>
+                    <li>Fotokopi Ijazah Legalisir</li>
+                    <li>Fotokopi SHUN Legalisir</li>
+                    <li>Fotokopi Nilai Rapot Semester 4/5/6</li>
+                    <li>Fotokopi Rekening Listrik & PBB</li>
+                    <li>Bukti prestasi akademik/non-akademik selama SMA/SMK/sederajat</li>
+                    <li>Surat Keterangan Tidak Mampu dari Kelurahan</li>
+                    <li>Surat Pernyataan Penghasilan Orang Tua Bermaterai</li>
+                    <li>Foto Rumah Nampak Bagian Depan, Bagian Dalam, Foto Keluarga & foto Close Up</li>
+                    <li>Lulus Tes Beasiswa KIP Kuliah yang diselenggarakan oleh Universitas Budi Luhur</li>
+                  </ol>
+                  <p class="pt-2">
+                    <strong>Note :</strong> Pendaftaran KIP Kuliah (<a class="text-blue-500 hover:text-blue-900" href="https://kip-kuliah.kemdikbud.go.id">https://kip-kuliah.kemdikbud.go.id</a>)
+                  </p>
+                </div>
+              </div>
+              <hr />
+            </div>
+            <!-- Program-program -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4 -->
+
+    <!-- 5 -->
+    <section class="informasi section" id="informasi">
+      <div class="bg-gray-200 h-auto" id="informasi">
+        <div class="container mx-auto pt-14 pb-14">
+          <h1 class="text-center text-4xl text-extrabold text-blue-900 mb-4 px-20 font-poppins"><strong>INFORMASI PROGRAM STUDI PILIHAN</strong></h1>
+          <p class="font-poppins px-10 md:px-24 text-center text-gray-800 md:text-gray-600 pb-10">
+            Saat ini pekerjaan di Era Revolusi Industri 4.0 membutuhkan penguasaan komputer dan penerapan teknologi diberbagai aspek. Di Tahun 2020 Universitas Budi Luhur telah 41 Tahun lebih terbukti
+            mendidik lulusan cerdas berbudi luhur yang tidak hanya terampil dibidangnya, namun dibarengi dengan penguasaan teknologi, dan juga memiliki karakter yang baik (berbudi luhur).
+          </p>
+          <div class="grid grid-cols-12 font-poppins pr-10 pl-10">
+            <div class="col-span-12 md:col-span-4 pb-6 md:pr-7">
+              <div class="border bg-white shadow" data-aos="zoom-in-right">
+                <img src="img/undraw_programming_2svr.png" alt="FTI" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/FTI.html"><h1 class="pl-5">Fakultas Teknologi Informasi (S1)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/FTI.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+              <br />
+              <div class="border bg-white shadow" data-aos="fade-up-right">
+                <img src="img/undraw_3d_modeling_h60h.png" alt="FIK" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/FIK.html"><h1 class="pl-5">Fakultas Ilmu Komunikasi (S1)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/FIK.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+              <br />
+              <div class="border bg-white shadow" data-aos="fade-down-right">
+                <img src="img/undraw_revenue_3osh.png" alt="FEB" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/FEB.html"><h1 class="pl-5">Fakultas Ekonomi & Bisnis (S1)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/FEB.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-12 md:col-span-4 pb-6">
+              <div class="border bg-white shadow" data-aos="zoom-in-up">
+                <img src="img/undraw_candidate_ubwv.png" alt="FISIP" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/FISIP.html"><h1 class="pl-5">Fakultas Ilmu Sosial & Ilmu Politik (S1)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/FISIP.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+              <br />
+              <div class="border bg-white shadow" data-aos="zoom-in">
+                <img src="img/undraw_QA_engineers_dg5p.png" alt="FT" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/FT.html"><h1 class="pl-5">Fakultas Teknik (S1)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/FT.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+              <br />
+              <div class="border bg-white shadow" data-aos="fade-down">
+                <img src="img/undraw_Next_option_re_r9uf.png" alt="AS" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/PP.html"><h1 class="pl-5">Program Pancasarjana</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/PP.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-12 md:col-span-4 md:pl-7">
+              <div class="border bg-white shadow" data-aos="zoom-in-left">
+                <img src="img/undraw_Dev_focus_re_6iwt.png" alt="AS" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/PD.html"><h1 class="pl-5">Program Diploma (D3)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/PD.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+              <br />
+              <div class="border bg-white shadow" data-aos="zoom-out-down">
+                <img src="img/undraw_multitasking_hqg3.png" alt="AS" />
+                <a class="mt-2 ml-4 mb-3 font-extrabold text-left text-lg md:text-base" href="fakultas/AS.html"><h1 class="pl-5">Akademi Sekretari (D3)</h1></a>
+                <div class="flex pb-1 pt-3">
+                  <a class="bg-blue-400 hover:bg-blue-900 duration-200 text-white rounded py-2 px-4 h-full ml-4 mb-3 text-lg md:text-sm" href="fakultas/AS.html"
+                    >View More <span class="fas fa-angle-double-right"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 5 -->
+
+    <!-- 6 -->
+    <section class="biaya section" id="biaya">
+      <div class="bg-blue-100 h-auto">
+        <div class="container mx-auto pt-14 pb-14 text-center">
+          <h1 class="text-3xl text-extrabold text-blue-900 mb-6 px-10 font-poppins"><strong>Rincian Biaya Kuliah Universitas Budi Luhur 2021 – 2022</strong></h1>
+          <div class="w-full pt-1 px-2 md:h-full">
+            <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2019/11/Rincian-Biaya-Masuk-Universitas-Budi-Luhur-2021-2022-3.jpg" alt="gambar" />
+          </div>
+          <br />
+          <a
+            href="Biaya-Kuliah-Universitas-Budi-Luhur-2021-2022.pdf"
+            class="font-poppins text-center bg-blue-900 hover:bg-blue-500 duration-200 text-white rounded-lg py-3 px-6 md:py-3 md:px-5 w-auto pt-3 text-base md:text-base"
+            >Download Rincian <span class="fas fa-download"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- 6 -->
+
+    <!-- 7 -->
+    <div class="bg-white h-auto mb-20 md:pb-10">
+      <div class="mt-14 mb-16 md:mt-20">
+        <h1 class="text-4xl text-extrabold text-blue-900 mb-6 px-10 text-center"><strong>UNIVERSITAS BUDI LUHUR PELOPOR "KAMPUS MERDEKA"</strong></h1>
+        <p class="font-poppins px-10 md:px-24 text-center text-gray-600">
+          Sebelum Menteri Pendidikan dan Kebudayaan Republik Indonesia, Mas Menteri Nadiem Makarim menginisiasikan Kampus Merdeka, Universitas Budi Luhur telah menerapkan beberapa poin dari Program
+          Kampus Merdeka, antara lain:
+        </p>
+
+        <div class="col-span-12 md:col-span-6 pt-12 md:pt-16 md:px-24 font-poppins">
+          <div class="grid grid-cols-12">
+            <div class="grid grid-cols-12 col-span-12 text-center md:text-left">
+
+              <div class="col-span-12 md:col-span-6 md:mb-5">
+                <div class="grid grid-cols-12 md:pl-10">
+                  <div class="col-span-12 md:col-span-2 pt-5">
+                    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/03/Merdeka-Pilih-Mata-Kuliah-Sesuai-Hobi.png" class="mx-auto" alt="budiluhur" />
+                  </div>
+                  <div class="col-span-12 md:col-span-10 pt-2">
+                    <p class="text-2xl px-16 md:px-5 md:pr-10 text-blue-900 pb-3"><strong>Merdeka Pilih Mata Kuliah Sesuai Hobi</strong></p>
+                    <p class="text-base px-16 md:px-5 md:text-sm pb-5 text-gray-600">
+                      Kamu bisa mengikuti mata kuliah lain di luar program studi yang pilih. Bila hobi desain, tapi kuliah di Fakultas Teknologi Informasi, kamu bisa ambil mata kuliah lintas prodi
+                      seperti desain grafis dari DKV.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-6">
+                <div class="grid grid-cols-12 md:pl-10">
+                  <div class="col-span-12 md:col-span-2 pt-5">
+                    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/03/Merdeka-Tugas-Akhir-Alternatif-Tanpa-Skripsi.png" class="mx-auto" alt="budiluhur" />
+                  </div>
+                  <div class="col-span-12 md:col-span-10 pt-2">
+                    <p class="text-2xl px-16 md:px-5 md:pr-10 text-blue-900 pb-3"><strong>Merdeka Tugas Akhir Alternatif Tanpa Skripsi</strong></p>
+                    <p class="text-base px-16 md:px-5 md:text-sm pb-5 text-gray-600">
+                      Sudah engga jaman mau lulus, tapi pusing Skripsi. Di Universitas Budi Luhur terdapat Alternatif Skripsi, seperti; Projek Tugas Akhir dan Karya.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-6">
+                <div class="grid grid-cols-12 md:pl-10">
+                  <div class="col-span-12 md:col-span-2 pt-5">
+                    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/03/Merdeka-Tentukan-Jadwal-Kuliah.png" class="mx-auto" alt="budiluhur" />
+                  </div>
+                  <div class="col-span-12 md:col-span-10 pt-2">
+                    <p class="text-2xl px-16 md:px-5 md:pr-10 text-blue-900 pb-3"><strong>Merdeka Tentukan Jadwal Kuliah</strong></p>
+                    <p class="text-base px-16 md:px-5 md:text-sm pb-5 text-gray-600">
+                      Punya banyak aktivitas di luar kampus? Kamu bisa atur jadwal kuliah agar sesuai dengan waktu kesibukan lain.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-6 md:mb-5">
+                <div class="grid grid-cols-12 md:pl-10">
+                  <div class="col-span-12 md:col-span-2 pt-5">
+                    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/03/Merdeka-Belajar-di-Manapun.png" class="mx-auto" alt="budiluhur" />
+                  </div>
+                  <div class="col-span-12 md:col-span-10 pt-2">
+                    <p class="text-2xl px-16 md:px-5 md:pr-10 text-blue-900 pb-3"><strong>Merdeka Belajar di Manapun</strong></p>
+                    <p class="text-base px-16 md:px-5 md:text-sm pb-5 text-gray-600">
+                      Hari gini masih kuliah dikelas? Di Kampus Merdeka Universitas Budi Luhur kuliah diselenggarakan dengan metode Blended Learning yang dilakukan secara Tatap Muka dan Online.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-6">
+                <div class="grid grid-cols-12 md:pl-10">
+                  <div class="col-span-12 md:col-span-2 pt-5">
+                    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/03/Merdeka-Kuliah-Sambil-KerjaMagang-di-Luar-Negeri.png" class="mx-auto" alt="budiluhur" />
+                  </div>
+                  <div class="col-span-12 md:col-span-10 pt-2">
+                    <p class="text-2xl px-16 md:px-5 md:pr-10 text-blue-900 pb-3"><strong>Merdeka Pilih Mata Kuliah Sesuai Hobi</strong></p>
+                    <p class="text-base px-16 md:px-5 md:text-sm pb-5 text-gray-600">
+                      Di Universitas Budi Luhur kamu punya kesempatan magang di Perguruan Tinggi di Luar Negeri seperti Belanda, Jepang, Taiwan, dan Malaysia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-12 md:col-span-6">
+                <div class="grid grid-cols-12 md:pl-10">
+                  <div class="col-span-12 md:col-span-2 pt-5">
+                    <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/03/Merdeka-Kuliah-di-Kampus-Perguruan-Tinggi-Negeri.png" class="mx-auto" alt="budiluhur" />
+                  </div>
+                  <div class="col-span-12 md:col-span-10 pt-2">
+                    <p class="text-2xl px-16 md:px-5 md:pr-10 text-blue-900 pb-3"><strong>Merdeka Kuliah di Kampus Perguruan Tinggi Negeri</strong></p>
+                    <p class="text-base px-16 md:px-5 md:text-sm pb-5 text-gray-600">
+                      Universitas Budi Luhur telah menjalin kerjasama pada Perguruan TInggi Negeri terbaik di Indonesia dalam Program Pertukaran Mahasiswa
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 7 -->
+
+    <!-- 8 -->
+    <!-- <div class="bg-blue-100 h-auto text-center">
+      <div class="pt-16 pb-16">
+        <h1 class="text-blue-900 text-4xl font-extrabold md:font-extrabold pb-10" style="text-transform: uppercase">PROGRAM STUDI PILIHAN</h1>
+        <p class="font-poppins px-10 md:px-24 text-gray-600">
+          Saat ini pekerjaan di Era Revolusi Industri 4.0 membutuhkan penguasaan komputer dan penerapan teknologi diberbagai aspek. Di Tahun 2020 Universitas Budi Luhur telah 41 Tahun lebih terbukti
+          mendidik lulusan cerdas berbudi luhur yang tidak hanya terampil dibidangnya, namun dibarengi dengan penguasaan teknologi, dan juga memiliki karakter yang baik (berbudi luhur).
+        </p>
+        <section id="demos">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <h4>1</h4>
+                </div>
+                <div class="item">
+                  <h4>2</h4>
+                </div>
+                <div class="item">
+                  <h4>3</h4>
+                </div>
+                <div class="item">
+                  <h4>4</h4>
+                </div>
+                <div class="item">
+                  <h4>5</h4>
+                </div>
+                <div class="item">
+                  <h4>6</h4>
+                </div>
+                <div class="item">
+                  <h4>7</h4>
+                </div>
+                <div class="item">
+                  <h4>8</h4>
+                </div>
+                <div class="item">
+                  <h4>9</h4>
+                </div>
+                <div class="item">
+                  <h4>10</h4>
+                </div>
+                <div class="item">
+                  <h4>11</h4>
+                </div>
+                <div class="item">
+                  <h4>12</h4>
+                </div>
+              </div>
+              <a class="button secondary play">Play</a> 
+              <a class="button secondary stop">Stop</a> 
+
+              <script>
+                $(document).ready(function() {
+                  var owl = $('.owl-carousel');
+                  owl.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    autoplayHoverPause: true
+                  });
+                  $('.play').on('click', function() {
+                    owl.trigger('play.owl.autoplay', [1000])
+                  })
+                  $('.stop').on('click', function() {
+                    owl.trigger('stop.owl.autoplay')
+                  })
+                })
+              </script>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div> -->
+    <!-- 8 -->
+
+    <!-- 9 -->
+    <div class="bg-white h-auto md:h-auto">
+      <div class="container mx-auto pb-16">
+        <h1 class="text-center text-4xl text-extrabold text-blue-900 mb-6 px-10"><strong>APA KATA BLUTIZEN (BUDI LUHUR CITIZEN)</strong></h1>
+        <div class="grid grid-cols-12 px-5 md:px-16 pt-5 pb-5 text-left font-poppins">
+          <div class="col-span-12 md:col-span-6 mb-6 px-10">
+            <p class="italic">
+              "Universitas Budi Luhur mendidik dengan cerdas, terampil dan menerapkan nilai pekerti luhur yang sangat amat baik. Saya sampai dalam tahap seperti ini juga karena pendidikan di Budi
+              Luhur. Benar-benar mencerdaskan!"
+            </p>
+            <div class="col-span-12 md:col-span-6 pt-2 pb-3">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2"><img class="w-14" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2018/10/alumni-07.png" alt="foto" /></div>
+                <div class="col-span-7 md:col-span-10 pl-2 pt-2 md:-ml-24">
+                  <p class="text-sm md:px-20 text-blue-900"><strong>FAIZAL HERMIANSYAH</strong></p>
+                  <p class="text-xs md:text-sm md:px-20 md:pb-3 text-gray-500">Technopreneur</p>
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <p class="italic">
+              "Rasanya kuliah di Budi Luhur itu menyenangkan banget. Kenapa? Karena disini aku mendapatkan banyak ilmu, pengalaman serta temen-temen yang baik dan gokil abis hehe. Banyak ilmu yang
+              dosen kasih ke aku dan jadi bekel aku untuk survive di dunia pekerjaan dan juga masa-masa kuliahku makin berwarna karena bisa ikut jadi bagian dari KBOM Budi Luhur."
+            </p>
+            <div class="col-span-12 md:col-span-6 pt-2">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2 pt-1"><img class="w-14" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2018/10/alumni-05.png" alt="foto" /></div>
+                <div class="col-span-10 md:col-span-10 pl-4 pt-3 md:pt-3 md:-ml-24">
+                  <p class="text-sm md:px-20 text-blue-900"><strong>ELVARA ZUNIA ARNADA</strong></p>
+                  <p class="text-xs md:text-sm md:px-20 pb-5 text-gray-500">Graphic Designer orami.co.id</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-12 md:col-span-6 px-10">
+            <p class="italic">
+              "Rasanya kuliah di Universitas Budi Luhur itu sangat menyenangkan, semua dosennya supportive dan friendly, tapi juga tegas at some point. Lingkungan kampusnya juga ramah, gak ada
+              senioritas, semua berjalan dengan kemampuannya masing-masing dan kekeluargaan."
+            </p>
+            <div class="col-span-12 md:col-span-6 pt-2 md:pb-3">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2 pt-1"><img class="w-14" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2018/10/alumni-08.png" alt="foto" /></div>
+                <div class="col-span-10 md:col-span-10 pl-4 pt-2 md:pt-2 md:-ml-24">
+                  <p class="text-sm md:px-20 text-blue-900"><strong>RACHMATKA DWI SUSANTI</strong></p>
+                  <p class="text-xs md:text-sm md:px-20 pb-5 text-gray-500">Online Engagement Specialist</p>
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <p class="italic">
+              "Ilmu yang saya dapatkan di FISIP HI Universitas Budi Luhur yang mengantarkan saya ke pekerjaan sebagai staf KBRI di luar negeri. Mata Kuliah yang dulu saya dapatkan sebagai teori
+              sekarang telah dipraktikkan setiap saat dalam lingkup kerja. Terimakasih Universitas Budi Luhur dan FISIP. The Best!"
+            </p>
+            <div class="col-span-12 md:col-span-6 pt-2">
+              <div class="grid grid-cols-12">
+                <div class="col-span-2 pt-1"><img class="w-14" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2018/10/alumni-06.png" alt="foto" /></div>
+                <div class="col-span-10 md:col-span-10 pl-2 pt-2 md:pt-3 md:-ml-24">
+                  <p class="text-sm md:px-20 text-blue-900"><strong>EMITHA KARINA SEBAYANG</strong></p>
+                  <p class="text-xs md:text-sm md:px-20 pb-5 text-gray-500">Staf KBRI Pyongyang RDRK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 9 -->
+
+    <!-- 10 -->
+    <div class="bg-blue-100 h-auto md:h-auto">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 px-5 md:px-16 font-poppins text-sm">
+          <div class="col-span-12 md:col-span-4 pt-10 pb-10 pr-10 md:pb-10">
+            <!-- Fakultas -->
+            <h6 class="text-blue-900 font-bold pb-2">FAKULTAS</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://fti.budiluhur.ac.id">Fakultas Teknologi Informasi</a><br />
+            <a class="hover:text-blue-700" href="http://d3unggulan.budiluhur.ac.id">Diploma 3 (Manajemen Informatika-FTI)</a><br />
+            <a class="hover:text-blue-700" href="https://fikom.budiluhur.ac.id">Fakultas Ilmu Komunikasi (FIKOM)</a><br />
+            <a class="hover:text-blue-700" href="https://fe.budiluhur.ac.id">Fakultas Ekonomi Dan Bisnis (FEB)</a><br />
+            <a class="hover:text-blue-700" href="https://fisip.budiluhur.ac.id">Fakultas Ilmu Sosial Dan Ilmu Politik (FISIP)</a><br />
+            <a class="hover:text-blue-700" href="https://ft.budiluhur.ac.id">Fakultas Teknik (FT)</a><br />
+            <a class="hover:text-blue-700" href="http://astri.budiluhur.ac.id">Akademi Sekretar Budi Luhur (ASTRI)</a><br />
+            <a class="hover:text-blue-700" href="http://executive.budiluhur.ac.id/">Karyawan Kelas</a><br />
+            <a class="hover:text-blue-700" href="http://pascasarjana.budiluhur.ac.id//">Pancasarjana</a><br />
+            <br />
+            <!-- Web Mahasiswa -->
+            <h6 class="text-blue-900 font-bold pb-2">WEB MAHASISWA</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://tracer.budiluhur.ac.id/sign/">Tracer Study</a><br />
+            <br />
+            <!-- Web Dosen -->
+            <h6 class="text-blue-900 font-bold pb-2">WEB DOSEN</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://webdosen.budiluhur.ac.id/">Web Dosen</a><br />
+            <a class="hover:text-blue-700" href="https://sap.budiluhur.ac.id/">Bahan Ajar</a><br />
+            <br />
+            <!-- Web Karyawan -->
+            <h6 class="text-blue-900 font-bold pb-2">WEB KARYAWAN</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://sim.budiluhur.ac.id/">Sistem Informasi Manajeman Budi Luhur(SIM)</a><br />
+            <br />
+            <!-- Alumni -->
+            <h6 class="text-blue-900 font-bold pb-2">ALUMNI</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://alumnibl.budiluhur.ac.id">Pencarian Alumni</a><br />
+            <a class="hover:text-blue-700" href="http://alumni.budiluhur.ac.id/">Alumni</a><br />
+            <br />
+            <!-- Tracer Study -->
+            <h6 class="text-blue-900 font-bold pb-2">TRACER STUDY</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://tracer.budiluhur.ac.id/sign/">Tracer Study</a><br />
+          </div>
+
+          <div class="col-span-12 -mt-4 md:mt-10 md:col-span-4 pb-10 md:pb-10 pr-10">
+            <!-- Biro Pendukung -->
+            <h6 class="text-blue-900 font-bold pb-2">BIRO PENDUKUNG</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="http://baak.budiluhur.ac.id/">Direktorat Administrasi Akademik (DAA)</a><br />
+            <a class="hover:text-blue-700" href="http://kemahasiswaan.budiluhur.ac.id/">Direktorat Kemahasiswaan, Karir, dan Alumni (DKKA)</a><br />
+            <a class="hover:text-blue-700" href="http://keuangan.budiluhur.ac.id/">Direktorat Keuangan</a><br />
+            <a class="hover:text-blue-700" href="http://sdm.budiluhur.ac.id/">Direktorat Sumber Daya Manusia</a><br />
+            <a class="hover:text-blue-700" href="http://dpm.budiluhur.ac.id/">Direktorat Penjamin MUtu</a><br />
+            <a class="hover:text-blue-700" href="http://riset.budiluhur.ac.id/">Lembaga Riset</a><br />
+            <a class="hover:text-blue-700" href="http://ppm.budiluhur.ac.id/">PPM</a><br />
+            <a class="hover:text-blue-700" href="http://perpustakaan.budiluhur.ac.id/">Perpustakaan</a><br />
+            <a class="hover:text-blue-700" href="http://pustaka.budiluhur.ac.id/">Pustaka</a><br />
+            <a class="hover:text-blue-700" href="http://karir.budiluhur.ac.id/">Career Center</a><br />
+            <a class="hover:text-blue-700" href="http://umum.budiluhur.ac.id/">Direktorat Administrasi Umum</a><br />
+            <a class="hover:text-blue-700" href="http://staff.budiluhur.ac.id/">Staff Universitas Budi Luhur</a><br />
+            <br />
+            <!-- Tautan Penting Lainnya -->
+            <h6 class="text-blue-900 font-bold pb-2">TAUTAN PENTING LAINNYA</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="http://budiluhur.blog/">Blog</a><br />
+            <a class="hover:text-blue-700" href="http://liputan.budiluhur.ac.id/">Liputan</a><br />
+            <a class="hover:text-blue-700" href="http://lldikti3.ristekdikti.go.id/">LLDIKTI3</a><br />
+            <a class="hover:text-blue-700" href="http://forlap.ristekdikti.go.id/">Forlap</a><br />
+            <a class="hover:text-blue-700" href="http://simlitabmas.ristekdikti.go.id//">SIMLITABMAS</a><br />
+            <a class="hover:text-blue-700" href="http://sinta2.ristekdikti.go.id/">SINTA</a><br />
+            <a class="hover:text-blue-700" href="https://globalclimatecon.com/">6th International Conference On Climate Change</a><br />
+            <a class="hover:text-blue-700" href="http://digitalmarketingcenter.id/">Digital Business Center</a><br />
+          </div>
+
+          <div class="col-span-12 -mt-4 md:mt-10 md:col-span-4 pb-10 pr-10 md:pb-10">
+            <!-- Pendaftaran -->
+            <h6 class="text-blue-900 font-bold pb-2">PENDAFTARAN</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <a class="hover:text-blue-700" href="https://pendaftaran.budiluhur.ac.id/">Pendaftaran Mahasiswa Baru</a><br />
+            <a class="hover:text-blue-700" href="http://infopmb.budiluhur.ac.id/">informasi Pendaftaran</a><br />
+            <br />
+            <!-- Sosial Media -->
+            <h6 class="text-blue-900 font-bold pb-2">SOSIAL MEDIA</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <div class="hidden md:flex">
+              <a class="hover:text-blue-700 fab fa-youtube text-2xl mr-3 hidden" href="https://youtube.com/kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-instagram text-2xl mr-3" href="https://instagram.com/kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-tiktok text-2xl mr-3" href="https://www.tiktok.com/@kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-twitter text-2xl mr-3" href="https://twitter.com/kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-line text-2xl mr-3" href="http://line.me/ti/p/~@kampusbudiluhur"></a>
+              <a class="hover:text-blue-700 fab fa-spotify text-2xl mr-3" href="https://open.spotify.com/show/667XScdZx09vDW6vEu9r55"></a>
+              <a class="hover:text-blue-700 fab fa-facebook text-2xl mr-3" href="https://www.facebook.com/groups/universitasbudiluhur/"></a>
+              <a class="hover:text-blue-700 fas fa-envelope text-2xl mr-3" href="mailto:info@budiluhur.ac.id"></a>
+              <a class="hover:text-blue-700 fab fa-whatsapp text-2xl mr-3" href="https://api.whatsapp.com/send?phone=+628118714455&text=Saya ingin bertanya seputar Kampus Universitas Budi Luhur…"></a>
+            </div>
+            <div class="md:hidden">
+              <a class="hover:text-blue-700" href="https://youtube.com/kampusbudiluhur">Youtube</a><br />
+              <a class="hover:text-blue-700" href="https://instagram.com/kampusbudiluhur">Instagram</a><br />
+              <a class="hover:text-blue-700" href="https://www.tiktok.com/@kampusbudiluhur">TikTok</a><br />
+              <a class="hover:text-blue-700" href="https://twitter.com/kampusbudiluhur">Twitter</a><br />
+              <a class="hover:text-blue-700" href="http://line.me/ti/p/~@kampusbudiluhur">Line</a><br />
+              <a class="hover:text-blue-700" href="https://open.spotify.com/show/667XScdZx09vDW6vEu9r55">Spotify</a><br />
+              <a class="hover:text-blue-700" href="https://www.facebook.com/groups/universitasbudiluhur/">Facebook</a><br />
+              <a class="hover:text-blue-700" href="mailto:info@budiluhur.ac.id">Email</a><br />
+              <a class="hover:text-blue-700" href="https://api.whatsapp.com/send?phone=+628118714455&text=Saya ingin bertanya seputar Kampus Universitas Budi Luhur…">Whatsapp</a><br />
+            </div>
+
+            <br />
+            <!-- Lokasi -->
+            <h6 class="text-blue-900 font-bold pb-2">LOKASI</h6>
+            <hr class="pb-2" style="border-top: 1px dotted blue" />
+            <div class="textwidget">
+              <p>
+                <strong>Kampus Pusat:</strong><br />
+                Jl. Ciledug Raya, Petukangan Utara,<br />
+                Jakarta Selatan, 12260.<br />
+                DKI Jakarta, Indonesia.<br />
+                Telp: 021-585 3753 Fax: 021-585 3752.<br />
+                Email: <a class="hover:text-blue-700" href="mailto:info@budiluhur.ac.id">info@budiluhur.ac.id</a>
+              </p>
+              <br />
+              <p>
+                <strong>Kampus Roxy:</strong><br />
+                Pusat Niaga Roxy Mas Blok E2 No.38-39<br />
+                Jl.K.H. Hasyim Ashari Jakarta Pusat<br />
+                Telp: 021-6328709-10 Fax: 021-6322872<br />
+                Website: <a class="hover:text-blue-700" href="http://roxy.budiluhur.ac.id/">roxy.budiluhur.ac.id</a>
+              </p>
+              <br />
+              <p>
+                <strong>Kampus Salemba:</strong><br />
+                Sentra Salemba Mas Blok S-T<br />
+                Jl. Salemba Raya No. 34-36<br />
+                Telp: 021-3928688-89 Fax: 021-3161636<br />
+                Website: <a class="hover:text-blue-700" href="http://salemba.budiluhur.ac.id/">salemba.budiluhur.ac.id</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 10 -->
+    <!-- end body -->
+
+    <!-- footer -->
+    <div class="bg-blue-900 h-auto md:h-20">
+      <div class="container mx-auto">
+        <p class="text-white text-center pt-7 pb-7 font-poppins px-10">
+          Copyright @ 2020. <a class="text-blue-400 md:hover:text-white" href="http://infopmb.budiluhur.ac.id/">Universitas Budi Luhur</a>. All Right Reserved
+        </p>
+      </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- Scroll Section -->
+    <script src="../js/main.js"></script>
+    <!-- Scroll Section -->
+
+    <!-- Script dropdown SYARAT DAN KETENTUAN PENDAFTARAN -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.querySelector("#menu-btn");
+        const dropdown = document.querySelector("#dropdown");
+
+        menuBtn.addEventListener("click", () => {
+          dropdown.classList.toggle("hidden");
+          dropdown.classList.toggle("flex");
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menuBtn2 = document.querySelector("#menu-btn2");
+        const dropdown2 = document.querySelector("#dropdown2");
+
+        menuBtn2.addEventListener("click", () => {
+          dropdown2.classList.toggle("hidden");
+          dropdown2.classList.toggle("flex");
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menuBtn3 = document.querySelector("#menu-btn3");
+        const dropdown3 = document.querySelector("#dropdown3");
+
+        menuBtn3.addEventListener("click", () => {
+          dropdown3.classList.toggle("hidden");
+          dropdown3.classList.toggle("flex");
+        });
+      });
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menuBtn4 = document.querySelector("#menu-btn4");
+        const dropdown4 = document.querySelector("#dropdown4");
+
+        menuBtn4.addEventListener("click", () => {
+          dropdown4.classList.toggle("hidden");
+          dropdown4.classList.toggle("flex");
+        });
+      });
+    </script>
+    <!-- Script dropdown SYARAT DAN KETENTUAN PENDAFTARAN -->
+
+    <!-- Script carousel -->
+    <!-- Script carousel -->
+
+    <!-- Scroll Back to Top -->
+    <script src="js/up_btn.js"></script>
+    <script>
+      up({});
+    </script>
+    <!-- Scroll Back to Top -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
