@@ -13,6 +13,7 @@
     <!-- style -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../splide.min.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/662346788c.js" crossorigin="anonymous"></script>
@@ -61,14 +62,14 @@
                     </button>
                     <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                       <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/FTI.html">Fakultas Teknologi Informasi (S1)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/FIK.html">Fakultas Ilmu Komunikasi (S1)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/FEB.html">Fakultas Ekonomi & Bisnis (S1)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/FISIP.html">Fakultas Ilmu Sosial & Ilmu Politik (S1)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/FT.html">Fakultas Teknik (S1)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/PP.html">Program Pancasarjana (S2)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/PD.html">Program Diploma (D3)</a>
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="fakultas/AS.html">Akademi Sekretari (D3)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FTI.html">Fakultas Teknologi Informasi (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FIK.html">Fakultas Ilmu Komunikasi (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FEB.html">Fakultas Ekonomi & Bisnis (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FISIP.html">Fakultas Ilmu Sosial & Ilmu Politik (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/FT.html">Fakultas Teknik (S1)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/PP.html">Program Pancasarjana (S2)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/PD.html">Program Diploma (D3)</a>
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="../fakultas/AS.html">Akademi Sekretari (D3)</a>
                       </div>
                     </div>
                   </div>
@@ -82,7 +83,7 @@
 
     <!-- Content -->
     <div class="bg-white h-auto mb-20 md:mb-24">
-      <div class=" bg-white pt-5 px-10 md:px-96">
+      <div class="bg-white pt-5 px-10 md:px-96">
         <img src="../img/undraw_Next_option_re_r9uf.png" alt="PP" />
       </div>
       <div class="mt-5 mb-16 md:mt-5 font-poppins px-12 md:px-16">
@@ -99,7 +100,7 @@
         </ol>
         <p class="text-sm md:text-base md:px-20 pb-5">Kualitas SDM merupakan unsur penting dalam menghadapi era globalisasi. Pendidikan tinggi terus dibina dan dikembangkan guna menyiapkan peserta didik menjadi anggota masyarakat yang memiliki kemampuan akademis dan professional, kemampuan kepemimpunan, tanggap terhadap kebutuhan pembangunan serta pengembangan ilmu pengetahuan dan teknologi, berjiwa penuh pengabdian dan memiliki rasa tanggung jawab yang besar terhadap masa depan bangsa dan negara.</p>
         
-        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>Magister Manajemen</strong></p>
+        <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>Magister Akutansi</strong></p>
         <p class="text-sm md:text-base md:px-20">Konsentrasi:</p>
         <ol class="list-inside list-disc text-sm md:text-base md:px-20 pb-5">
           <li>Akuntansi Keuangan</li>
@@ -140,6 +141,33 @@
         </p>
       </div>
     </div>
+    
+    <!-- <div class="bg-blue-100 h-auto md:h-auto">
+      <div class="container mx-auto">
+        <div id="image-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="img/gambar1.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="img/gambar2.jpg" />
+              </li>
+              <li class="splide__slide">
+                <img src="img/gambar3.png" />
+              </li>
+              <li class="splide__slide">
+                <img src="img/gambar4.jpg" />
+              </li>
+            </ul>
+          </div>
+  
+          <div class="splide__progress">
+            <div class="splide__progress__bar"></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <div class="bg-blue-100 h-auto md:h-auto">
       <div class="container mx-auto">
@@ -301,6 +329,20 @@
       up({});
     </script>
     <!-- Scroll Back to Top -->
+
+    <!-- splide js -->
+    <!-- <script src="../js/splide.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide("#image-slider", {
+					type: "loop",
+					perPage: 2,
+					perMove: 1,
+					autoplay: true,
+				}).mount();
+			});
+		</script> -->
+    <!-- splide js -->
 
   </body>
 </html>

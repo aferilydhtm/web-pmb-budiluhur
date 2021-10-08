@@ -13,6 +13,7 @@
     <!-- style -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../splide.min.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/662346788c.js" crossorigin="anonymous"></script>
@@ -82,11 +83,11 @@
 
     <!-- Content -->
     <img src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2019/10/Web-Banner-ASTRI-Info-PMB-UBL-850x150px-01.jpg" alt="">
-    <div class="bg-white h-auto mb-20 md:mb-24">
-      <div class=" bg-white pt-5 px-10 md:px-80">
+    <div class="bg-white h-auto mb-1 md:mb-5">
+      <div class="bg-white pt-5 px-10 md:px-80">
         <img src="../img/undraw_multitasking_hqg3.png" alt="AS" />
       </div>
-      <div class="mt-5 mb-16 md:mt-5 font-poppins px-12 md:px-16">
+      <div class="mt-5 mb-10 md:mt-5 font-poppins px-12 md:px-16">
         <p class="text-base md:text-lg text-blue-900 mb-6 text-center md:text-center pb-5"><strong>Akademi Sekretari (D3)</strong></p>
         <p class="text-sm md:text-base md:px-20 pb-5">Berkomitmen tinggi menghasilkan Sekretaris modern yang cerdas dan berbudi luhur (strong personality), dengan kompetensi :</p>
         <ol class="list-inside list-disc text-sm md:text-base md:px-20 pb-5">
@@ -99,11 +100,17 @@
         <p class="text-sm md:text-base md:px-20 pb-5">Kurikulum yang mengacu pada Kerangka Kualiökasi Nasional Indonesia (KKNI) dirancang sesuai dengan kebutuhan dunia kerja sekretaris modern. Dengan konsentrasi utama memiliki kualiökasi kompetensi muatan administrasi dan kesekretarisan, teknologi informasi dan bahasa. Serta konsentrasi pendukung dengan muatan moral dan bisnis. Perkuliahan (teori dan praktek) dikemas dalam waktu 2.5 tahun (5 semester). Pada semester 6 mahasiswa mengikuti program magang dan siap memasuki dunia kerja.</p>
 
         <p class="text-sm md:text-base md:px-20 text-blue-900"><strong>PROSPEK KERJA</strong></p>
-        <p class="text-sm md:text-base md:px-20 pb-10">Berbekal pengetahuan dan kompetensi di bidang kesekretarisan, ekonomi/bisnis, bahasa, dan ICT (Information Communication Technology), maka lulusan Akademi Sekretari Budi Luhur siap memenangkan persaingan dunia kerja, sebagai sekretaris profesional bergelar Ahli Madya (A.Md).</p>
+        <p class="text-sm md:text-base md:px-20 pd-10">Berbekal pengetahuan dan kompetensi di bidang kesekretarisan, ekonomi/bisnis, bahasa, dan ICT (Information Communication Technology), maka lulusan Akademi Sekretari Budi Luhur siap memenangkan persaingan dunia kerja, sebagai sekretaris profesional bergelar Ahli Madya (A.Md).</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 text-center md:px-20 pt-10">
+          <p class="pb-10 md:pb-1">
+            <img class="text-center md:px-10" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/04/00.-UNIVERSITAS-BUDI-LUHUR.jpg" alt="">
+          </p>
+          <p class="pb-10 md:pb-1">
+            <img class="text-center md:px-10" src="https://infopmb.budiluhur.ac.id/wp-content/uploads/2020/04/42.-AKADEMI-SEKRETARI-BUDI-LUHUR-DIPLOMA-3.jpg" alt="">
+          </p>
+        </div>
 
-        <p class="pb-5 md:pb-1">
-          <img class="text-center md:px-96" src="http://infopmb.budiluhur.ac.id/wp-content/uploads/2020/04/00.-UNIVERSITAS-BUDI-LUHUR.jpg" alt="">
-        </p>
       </div>
     </div>
 
@@ -267,6 +274,20 @@
       up({});
     </script>
     <!-- Scroll Back to Top -->
+
+    <!-- splide js -->
+    <script src="../js/splide.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				new Splide("#image-slider", {
+					type: "loop",
+					perPage: 2,
+					perMove: 1,
+					autoplay: true,
+				}).mount();
+			});
+		</script>
+    <!-- splide js -->
 
   </body>
 </html>
